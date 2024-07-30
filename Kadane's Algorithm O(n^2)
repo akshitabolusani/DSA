@@ -1,0 +1,23 @@
+int maxSubArray(int* nums, int numsSize) {
+    int n = numsSize ; 
+    int max_sum = nums[0]; 
+    int curr_sum = 0 ; 
+
+
+    for( int i = 0 ; i < n ; i ++){
+       curr_sum = 0 ; 
+       for(int j = 0 ; j <n ; j ++){
+         curr_sum += nums[j] ;
+        if(curr_sum > max_sum){
+            max_sum = curr_sum ; 
+        } 
+       }
+
+        
+       }
+
+    return max_sum ; 
+
+    } 
+
+    
